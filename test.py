@@ -1,12 +1,20 @@
 score = 0
 def alku():
-    alotus = input('haluatko pelata')
-    return True
+    while True:
+        aloitus = input("Haluatko pelata? (y/n)")
+        if aloitus == "y":
+            return True
+            break
+        elif aloitus == "n":
+            return False
+            break
+        else:
+            print("Valitse y/n")
+            continue
 
-def kysymys1():
-    while alotus == True:
-        if True:
-            score += 1
+alku()
+        
 
-def tulos():
-    print(f'Sait oikein: {score}')
+        
+#def tulos():
+    #print(f'Sait oikein: {score}')
