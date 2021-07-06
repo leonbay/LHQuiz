@@ -16,5 +16,5 @@ alku()
         
 
         
-#def tulos():
-    #print(f'Sait oikein: {score}')
+def tulos():
+    print(f'Sait oikein: {score}')
