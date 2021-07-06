@@ -1,5 +1,18 @@
 score = 0
 
+def alku():
+    while True:
+        aloitus = input("Haluatko pelata? (y/n)")
+        if aloitus == "y":
+            return True
+            break
+        elif aloitus == "n":
+            return False
+            break
+        else:
+            print("Valitse y/n")
+            continue
+
 def kysymys1():
     while aloitus == True:
         vastaus1 = input('Mikä maa voittaa jalkapallon Euroopan-mestarruden vuonna 2021? \na. Suomi \nb. Italia \nc. Tanska \nd. Kanada \nVastaus: ')
@@ -28,4 +41,5 @@ def tulos():
 alku()
 kysymys1()
 kysymys2()
-tulos()
+tulos()        
+
