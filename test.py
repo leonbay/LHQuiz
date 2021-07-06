@@ -1,9 +1,19 @@
 score = 0
 def alku():
-    aloitus = input("Haluatko pelata? (y/n)")
-    if aloitus == y:
-        return True
-    elif aloitus == n:
+    while True:
+        aloitus = input("Haluatko pelata? (y/n)")
+        if aloitus == "y":
+            return True
+            break
+        elif aloitus == "n":
+            return False
+            break
+        else:
+            print("Valitse y/n")
+            continue
+
+alku()
+        
 
         
 #def tulos():
