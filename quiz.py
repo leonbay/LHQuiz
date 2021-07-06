@@ -3,10 +3,10 @@ def tietovisa():
     score = 0
     while True:
         aloitus = input("Haluatko pelata? (y/n)")
-        if aloitus == "y":
+        if aloitus.lower() == "y":
             jatko = True
 
-        elif aloitus == "n":
+        elif aloitus.lower() == "n":
             jatko = False
             return False
             
@@ -16,7 +16,7 @@ def tietovisa():
     
         while jatko:
             vastaus1 = input('Mikä maa voittaa jalkapallon Euroopan-mestarruden vuonna 2021? \na. Suomi \nb. Italia \nc. Tanska \nd. Kanada \nVastaus: ')
-            if vastaus1 == 'b':
+            if vastaus1.lower() == 'b':
                 score += 1
                 print('Oikein!')
                 break
@@ -29,7 +29,7 @@ def tietovisa():
 
         while jatko:
             vastaus1 = input('Mikä on paras pilvipalvelu? \na. AWS \nb. Azure \nc. Gcloud \nVastaus: ')
-            if vastaus1 == 'c':
+            if vastaus1.lower() == 'c':
                 score += 1
                 print('Oikein!')
                 print(f'Sait oikein: {score}')
