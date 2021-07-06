@@ -42,3 +42,7 @@ def tietovisa():
             
 
 tietovisa()
+
+# Kysymykset ja vastaukset voisi laittaa dictionaryyn tai listoihin, tämä toimii ihan kivasti kahdella kysymyksellä,
+# mutta jos tulee tarvetta lisätä enemmän kysymyksiä, se olisi hyvä voida tehdä dynaamisesti niin,
+# ettei tarvitse joka kerta kirjoittaa logiikkaa uudestaan.
