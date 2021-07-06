@@ -20,7 +20,7 @@ def tietovisa():
         while jatko:
             #You can simply write vastaus. As you do not have vastaus2 as a variable, you can just erase the number.
             vastaus1 = input('Mikä maa voittaa jalkapallon Euroopan-mestarruden vuonna 2021? \na. Suomi \nb. Italia \nc. Tanska \nd. Kanada \nVastaus: ')
-            if vastaus1 == 'b':
+            if vastaus1.lower() == 'b':
                 score += 1
                 print('Oikein!')
                 break
@@ -33,7 +33,7 @@ def tietovisa():
 
         while jatko:
             vastaus1 = input('Mikä on paras pilvipalvelu? \na. AWS \nb. Azure \nc. Gcloud \nVastaus: ')
-            if vastaus1 == 'c':
+            if vastaus1.lower() == 'c':
                 score += 1
                 print('Oikein!')
                 jatko = False
@@ -51,3 +51,7 @@ def tietovisa():
 # If you save the questions and the answers into a dictionary for example, you dont need to write all the rounds separately. You can use a for loop to iterate through the dictionary. Then you dont need to write the same while loop over and over again plus you can add new questions and answers easily.
 
 tietovisa()
+
+# Kysymykset ja vastaukset voisi laittaa dictionaryyn tai listoihin, tämä toimii ihan kivasti kahdella kysymyksellä,
+# mutta jos tulee tarvetta lisätä enemmän kysymyksiä, se olisi hyvä voida tehdä dynaamisesti niin,
+# ettei tarvitse joka kerta kirjoittaa logiikkaa uudestaan.
